@@ -12,11 +12,11 @@ export const Watchlist = () => {
           <h1 className="heading">My Watchlist</h1>
 
           <span className="count-pill">
-            {watchlist.length} {watchlist.length === 1 ? "Movie" : "Movies"}
+            {watchlist?.length} {watchlist?.length === 1 ? "Movie" : "Movies"}
           </span>
         </div>
 
-        {watchlist.length > 0 ? (
+        {watchlist?.length > 0 ? (
           <div className="movie-grid">
             {watchlist.map((movie) => (
               <MovieCard movie={movie} key={movie.id} type="watchlist" />

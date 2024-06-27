@@ -12,11 +12,11 @@ export const Watched = () => {
           <h1 className="heading">Watched Movies</h1>
 
           <span className="count-pill">
-            {watched.length} {watched.length === 1 ? "Movie" : "Movies"}
+            {watched?.length} {watched?.length === 1 ? "Movie" : "Movies"}
           </span>
         </div>
 
-        {watched.length > 0 ? (
+        {watched?.length > 0 ? (
           <div className="movie-grid">
             {watched.map((movie) => (
               <MovieCard movie={movie} key={movie.id} type="watched" />

@@ -5,6 +5,8 @@ export const Add = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
 
+  const REACT_APP_TMDB_KEY = "7032bee1afe526e7485cc76fb4ecb8eb";
+
   const onChange = (e) => {
     e.preventDefault();
 
